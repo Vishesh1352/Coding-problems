@@ -1,14 +1,17 @@
-public class Solution {
+class Solution {
     public int[] plusOne(int[] digits) {
-        String s;
+        String s="";
         for (int i=0; i<digits.length-1 ;i++){
              s=""+digits[i];
         }
-        int se = Integer.parseint(s);
+        int se = Integer.parseInt(s);
         se+=1;
         String Ans=se+"";
+        int l=Ans.length();
+        int[] So =new int[l];
         for(int i=0;i<Ans.length();i++){
-            int[] So=Integer.parseint(ans.charAt(1));
+            char c=Ans.charAt(i);
+            So[i]=Character.getNumericValue(c);
         }
         return So;
     }
