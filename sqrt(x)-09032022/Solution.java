@@ -1,20 +1,17 @@
 class Solution {
     public int mySqrt(int x) {
-          int a= root(x);
-        return a;
+          root(x);
+        return x;
     }
      public int root(int y){
             
             for (int i =1 ;i<=y/2;i++){
               int z=y%i;
              if(z==i){
-                int r=0;
-                r=z;
-                break;
+               y=z;
                     }
                  
                 }
-             return r;
-             
+             return y;
              }
 }
