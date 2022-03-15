@@ -3,10 +3,13 @@ class Solution {
           root(x);
         return x;
     }
+    public static void main (args []){
+          
+        }
      public int root(int y){
             
             for (int i =1 ;i<=y/2;i++){
-              int z=y%i;
+              int z=y/i;
              if(z==i){
                y=z;
                     }
