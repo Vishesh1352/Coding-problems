@@ -12,7 +12,7 @@ class Solution {
     return due;
     }
     public static void main (String[] args){
-            int sqr=49;
+            int sqr=8;
             int a = mySqrt(sqr);
             System.out.println(""+a);
                 }
