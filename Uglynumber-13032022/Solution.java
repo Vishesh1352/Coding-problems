@@ -1,6 +1,6 @@
 class Solution {
     public boolean isUgly(int n) {
-        boolean Ans=true;
+        boolean Ans;
         Ans=findUgly(n);
        return Ans; 
     }
@@ -11,11 +11,11 @@ class Solution {
         }
         
         int h=n/2;
-        if(h!=3||h!=5){
+        if(h!=3 && h!=5){
             return Sol=false;
         }
         else{
             return Sol=true;
         }
     }
-}   
+}
