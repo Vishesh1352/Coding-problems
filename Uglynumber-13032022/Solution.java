@@ -5,17 +5,18 @@ class Solution {
        return Ans; 
     }
     public boolean findUgly(int n){
-        boolean Sol;
-        if(n==1){
-            return Sol=true;
+        boolean jab;
+        if(n==1||n==2||n==3||n==5||n/2==3||n/2==5||n/3==2||n/3==5||n){
+            return jab=true;
         }
         
         int h=n/2;
-        if(h!=3 && h!=5){
-            return Sol=false;
+
+        if(h/3!=1 || h/5!=1){
+            return jab=false;
         }
         else{
-            return Sol=true;
+            return jab=true;
         }
     }
 }
