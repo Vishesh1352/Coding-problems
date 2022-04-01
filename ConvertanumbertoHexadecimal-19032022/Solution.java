@@ -5,7 +5,7 @@ class Solution {
                     int rem=num%16;
                     num=num/16;
                     if(rem>=10){
-                        
+                      switch  
                     }
                     Ans=""+rem;
                 }
