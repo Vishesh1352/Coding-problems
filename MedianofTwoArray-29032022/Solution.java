@@ -4,6 +4,8 @@ public class Solution {
         double size2=num2.length;
         double size=size1+size2;
         double median=0;
-       
+        if(size%2==0){
+            median=num
+        }
     }
 }
