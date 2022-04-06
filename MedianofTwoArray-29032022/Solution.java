@@ -8,7 +8,7 @@ public class Solution {
             median=num1[size/2];
         }
         else{
-            median=num1[((size+1/2)+(size/2))/2];
+            
         }
     }
 }
