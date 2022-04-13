@@ -11,4 +11,9 @@ class Solution {
                 }
                 return Ans; 
             }
+            public static void main(String[] args){
+                int que=221;
+                String pr = toHex(que);
+                System.out.println(""+pr);
+            }
         }
