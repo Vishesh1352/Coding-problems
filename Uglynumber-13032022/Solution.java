@@ -11,7 +11,7 @@ class Solution {
             return Ans=true;
         }
         else{
-            return Ans=false;
+            return Ans=true;
         }    
     }  
 }
