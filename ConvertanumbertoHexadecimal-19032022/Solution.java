@@ -7,7 +7,7 @@ class Solution {
                     if(rem>=10){
                           
                     }
-                    Ans="";
+                    Ans=""+rem;
                 }
                 return Ans; 
             }
