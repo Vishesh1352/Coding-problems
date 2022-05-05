@@ -10,8 +10,6 @@ class Solution {
         if(byt==3||byt==5||byth==2||byth==5||byf==2||byf==3){
             return Ans=true;
         }
-        else{
-            return Ans=false;
-        }    
+       
     }         
 }
