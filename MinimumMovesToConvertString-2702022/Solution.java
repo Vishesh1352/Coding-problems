@@ -6,7 +6,7 @@ class Solution {
         while(i<s.length()){
             if(s.charAt(i)=='X'){
                 i+=3;
-                moves++;
+               
             }else
                 i++;
         }      
