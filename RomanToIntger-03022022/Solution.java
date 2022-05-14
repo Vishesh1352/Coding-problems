@@ -4,11 +4,7 @@ class Solution {
         int n = s.length();
         int sum = 0;
         
-        for(int i=0; i<n; i++){
-            if(i+1 < n && getValue(s.charAt(i)) < getValue(s.charAt(i+1)))
-                sum -= getValue(s.charAt(i));
-            else
-                sum += getValue(s.charAt(i));
+        
         }
         
         return sum;
