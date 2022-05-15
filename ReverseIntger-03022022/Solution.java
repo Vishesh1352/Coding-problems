@@ -9,7 +9,8 @@ class Solution {
         
         boolean flag = false;
         if(st.charAt(st.length() - 1) == '-'){
-           
+            st = st.substring(0,st.length() - 1);
+            flag = true;
         }
         
         int number = Integer.parseInt(st);
