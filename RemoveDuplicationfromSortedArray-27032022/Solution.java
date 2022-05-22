@@ -10,7 +10,9 @@ class Solution {
             }
             else{
                 nums[index]=nums[index2];
-           
+            }
+            index++;
+            index2++;
         }
         return nums.length-count;
     }
