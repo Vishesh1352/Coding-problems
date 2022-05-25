@@ -4,7 +4,7 @@ class Solution {
         boolean ans=true;
         for(int i=0;i<size-1;i++){
             for(int j=size-1;j>=0;j--){
-                if(nums[i]==nums[j-1]){
+                if(nums[i]==nums[j]){
                     ans=true;
                     break;
                 }
