@@ -1,38 +1,23 @@
-public class Solution {
-    public boolean vaildPalindrom(String s){
-    int n = s.length();
-    StringBuilder sbs=new StringBuilder();
-    sbs.append(s);
-    StringBuilder dsbs=new StringBuilder();
-    for(int i=0 ; i<n-1 ; i++){
-        System.out.println("number for loop run "+i);
-        dsbs=sbs.deleteCharAt(i);
-        boolean ans=chechPalindrom(dsbs);
-        if(ans==true){
-            return true;
+class Solution {
+    public boolean validPalindrome(String s) {
+        int i=0;
+        int j=s.length()-1;
+        while(i<=j){
+            if(s.charAt(i)!=s.charAt(j))
+                return pallin(s,i+1,j) || pallin(s,i,j-1);
+             i++;
+            j--;
         }
-        else{
-            continue;
-        }
+        return true;
     }
-    return false;
-  }
-  public boolean chechPalindrom(StringBuilder str){
-    int len =str.length();
-    int start=0;
-    int end=len-1;
-    while(start<end){
-        System.out.println("inside while loop");
-        if(str.charAt(start++)!=str.charAt(end--)){
-            return false;
+    
+    public boolean pallin(String s,int i,int j){
+        while(i<=j){
+            if(s.charAt(i)!=s.charAt(j))
+                return false;
+            i++;
+            j--;
         }
+        return true;
     }
-    return true;
-  }
-  
-  public static void main(String []args){
-      Solution so=new Solution();
-      boolean palians=so.vaildPalindrom("abc");
-      System.out.println("valid plindrom is "+palians);
-}
 }
